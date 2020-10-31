@@ -3,7 +3,7 @@ import torchreid
 torchreid.models.show_avai_models()
 
 model = torchreid.models.build_model(name='osnet_x0_25', num_classes=1041)
-torchreid.utils.load_pretrained_weights(model, "osnet_x0_25.pth") 
+torchreid.utils.load_pretrained_weights(model, "log/osnet_x0_25_market1501_softmax/model/model.pth.tar-180") 
 
 model.eval()
 

@@ -8,7 +8,7 @@ data:
   targets: ['market1501','dukemtmcreid']
   height: 96
   width: 48
-  combineall: False
+  combineall: True
   transforms: ['random_flip','color_jitter']
   save_dir: 'log/osnet_x0_25_market1501_softmax'
 
@@ -20,7 +20,7 @@ loss:
 train:
   optim: 'amsgrad'
   lr: 0.003
-  max_epoch: 180
+  max_epoch: 220
   batch_size: 256
   fixbase_epoch: 10
   open_layers: ['classifier']

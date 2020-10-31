@@ -15,4 +15,4 @@ import onnx
 input = torch.ones(1, 3, 96, 48)
 raw_output = model(input)
 
-torch.onnx.export(model, input, 'osnet_ain_x1_0.onnx', verbose=False, export_params=True)
+torch.onnx.export(model, input, 'osnet_x0_25_96_48.onnx', verbose=False, export_params=True)

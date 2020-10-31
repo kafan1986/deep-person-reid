@@ -21,7 +21,7 @@ class DukeMTMCreID(ImageDataset):
         - cameras: 8.
     """
     dataset_dir = 'dukemtmc-reid'
-    dataset_url = 'http://vision.cs.duke.edu/DukeMTMC/data/misc/DukeMTMC-reID.zip'
+    dataset_url = 'http://188.138.127.15:81/Datasets/DukeMTMC-reID.zip'
 
     def __init__(self, root='', **kwargs):
         self.root = osp.abspath(osp.expanduser(root))
